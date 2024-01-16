@@ -7,7 +7,7 @@ import datetime
 import pandas as pd
     
 from streamlit_option_menu import option_menu
-from streamlit_modal import Modal
+#from streamlit_modal import Modal
 
 from gtts import gTTS
 
@@ -152,19 +152,19 @@ def show_study_character(level):
             show_study_modal(item)
 
 def show_study_modal(item):
-    modal_write = Modal(title="쓰기", key="write")
+    # modal_write = Modal(title="쓰기", key="write")
     
-    cols = st.columns(8)
-    with cols[7]:
-        with modal_write.container():
-            btn_check = st.button(':white_check_mark: 확인 ', 'check')
-            if btn_check:
-                modal_write.close()
+    # cols = st.columns(8)
+    # with cols[7]:
+    #     with modal_write.container():
+    #         btn_check = st.button(':white_check_mark: 확인 ', 'check')
+    #         if btn_check:
+    #             modal_write.close()
                 
-            btn_close = st.button(':x: 닫기 ', 'close')
-            if btn_close:
-                modal_write.close()
-
+    #         btn_close = st.button(':x: 닫기 ', 'close')
+    #         if btn_close:
+    #             modal_write.close()
+    pass
 
 def show_exam():
     global character_list
