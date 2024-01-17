@@ -7,7 +7,7 @@ import datetime
 import pandas as pd
     
 from streamlit_option_menu import option_menu
-#from streamlit_modal import Modal
+# from streamlit_modal import Modal
 
 from gtts import gTTS
 
@@ -165,6 +165,7 @@ def show_study_modal(item):
     #         if btn_close:
     #             modal_write.close()
     pass
+
 
 def show_exam():
     global character_list
